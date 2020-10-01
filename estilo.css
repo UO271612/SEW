@@ -1,0 +1,11 @@
+header { text-align: center; }
+h1, h2 { font-family: "Andale Mono", AndaleMono, monospace; }
+body { font-family: Candara; }
+h1 { font-size:2.5em; }
+table, th, td { 
+    border: 1px solid white;
+    text-align: center;
+    padding: 10px;
+}
+
+tr, td { font-family: "Arial Narrow"; }
