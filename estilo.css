@@ -2,7 +2,7 @@ body {
   background-color: #C0C0C0; 
   font-family: Monaco, Consolas, "Lucida Console", monospace;
   overflow: auto;
-  min-width: 50em;
+  min-width: 53em;
   font-weight: 100;
   background-image: linear-gradient(to bottom, silver, grey);
 }
