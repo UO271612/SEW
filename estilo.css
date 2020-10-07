@@ -16,6 +16,10 @@ header {
   padding-right: 18rem;
 }
 
+main {
+
+}
+
 h1 { 
   border: 0.2em solid white;
   font-family: "Andale Mono", AndaleMono, monospace;
@@ -41,9 +45,8 @@ ul {
   flex-direction: column;
   align-items: center;
   align-content: center;
-  align-self: center;
   justify-content: center;
-  list-style-position: outside
+  list-style-position: outside;
 }
 
 li {
@@ -81,18 +84,47 @@ td {
 audio {
   margin: 0 auto;
   display: block;
-  padding-top: 1.4em;
+  padding-top: 0.5em;
   height: 2em;
   outline: none;
+}
+
+video {
+  display: block;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  background-color: #000000;
 }
 
 a {
   font-family: "Andale Mono", AndaleMono, monospace;
   color: #000000;
   font-weight: bold;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+a:hover {
+  color: grey;
 }
 
 footer {
   padding-top: 1.25em;
   text-align: center;
+  font-size: 1.4em;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+
+nav ul li {
+  background-color: azure;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 0.15em solid black;
 }
