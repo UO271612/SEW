@@ -1,11 +1,86 @@
-header { text-align: center; }
-h1, h2 { font-family: "Andale Mono", AndaleMono, monospace; }
-body { font-family: Candara; }
-h1 { font-size:2.5em; }
-table, th, td { 
-    border: 1px solid white;
-    text-align: center;
-    padding: 10px;
+body { 
+  background-color: #C0C0C0; 
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  overflow: auto;
+  min-width: 50em;
+  font-weight: 100;
+  background-image: linear-gradient(to bottom, silver, grey);
 }
 
-tr, td { font-family: "Arial Narrow"; }
+header { 
+  text-align: center; 
+  background-image: url(./images/header.jpg);
+  border: 0.1875em solid black;
+  border-style: double;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+h1 { 
+  border: 0.2em solid white;
+  font-family: "Andale Mono", AndaleMono, monospace;
+  background-color: #000000;
+  color: white; 
+  border-style: ridge;
+  font-size:2.5em;
+  margin: 0.3em;
+  padding: 0.25em;
+}
+
+h2 { 
+  font-family: "Andale Mono", AndaleMono, monospace; 
+  text-align: center;
+  color: white;
+  background: linear-gradient(to right, black, grey);
+  border: 0.1875em solid white;
+  border-style: dashed;
+}
+
+ul {
+  display: block;
+  justify-content: center;
+  margin-left: 40%;
+}
+
+li {
+  list-style: circle inside url(./images/ghost.png);
+  font-weight: bold;
+  text-align: left;
+  padding: 0.125em;
+  font-size: 1.25em;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
+nav + section { 
+  border: 0.2em solid black;
+  padding: 1%;
+}
+
+img.encabezado {
+  padding-top: 0;
+  padding-bottom: 5%;
+}
+
+table, tr, td {
+  margin-left: auto;
+  margin-right: auto;
+  border: 0.1875em solid black;
+  border-style: double;
+  text-align: center;
+  padding: 0.3125em;
+}
+
+td {
+  padding: 0.4375em;
+}
+
+a {
+  font-family: "Andale Mono", AndaleMono, monospace;
+  color: #000000;
+  font-weight: bold;
+}
+
+footer {
+  padding-top: 1.25em;
+  text-align: center;
+}
