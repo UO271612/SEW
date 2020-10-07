@@ -2,7 +2,7 @@ body {
   background-color: #C0C0C0; 
   font-family: Monaco, Consolas, "Lucida Console", monospace;
   overflow: auto;
-  min-width: 52em;
+  min-width: 50em;
   font-weight: 100;
   background-image: linear-gradient(to bottom, silver, grey);
 }
@@ -12,8 +12,8 @@ header {
   background-image: url(./images/header.jpg);
   border: 0.1875em solid black;
   border-style: double;
-  padding-left: 40%;
-  padding-right: 40%;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 h1 { 
@@ -22,7 +22,7 @@ h1 {
   background-color: #000000;
   color: white; 
   border-style: ridge;
-  font-size:2.5em;
+  font-size:2em;
   margin: 0.3em;
   padding: 0.25em;
 }
