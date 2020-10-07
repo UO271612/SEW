@@ -12,8 +12,8 @@ header {
   background-image: url(./images/header.jpg);
   border: 0.1875em solid black;
   border-style: double;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 20rem;
+  padding-right: 20rem;
 }
 
 h1 { 
