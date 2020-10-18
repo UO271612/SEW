@@ -67,10 +67,11 @@ img.encabezado {
 table, tr, td {
   margin-left: auto;
   margin-right: auto;
-  border: 0.1875em solid black;
-  border-style: double;
+  border: 0.15em solid black;
+  border-style: solid;
   text-align: center;
   padding: 0.3125em;
+  background-color: azure;
 }
 
 audio {
@@ -119,4 +120,19 @@ nav ul li {
   padding-left: 1em;
   padding-right: 1em;
   border: 0.15em solid black;
+}
+
+p {
+  border: 0.2em solid black;
+  padding: 0.1em;
+  background-color: azure;
+}
+
+footer p {
+  border: 0.05em solid black;
+  background-color: none;
+  margin-left: 35rem auto;
+  margin-right: 35rem auto;
+  min-width: fit-content;
+  text-align: center;
 }
