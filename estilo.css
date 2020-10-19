@@ -1,3 +1,4 @@
+/* a = 0, b = 0, c = 1 */
 body { 
   background-color: #C0C0C0; 
   font-family: Monaco, Consolas, "Lucida Console", monospace;
@@ -7,6 +8,7 @@ body {
   background-image: linear-gradient(to bottom, silver, grey);
 }
 
+/* a = 0, b = 0, c = 1 */
 header { 
   text-align: center; 
   background-image: url(./multimedia/header.jpg);
@@ -16,6 +18,7 @@ header {
   padding-right: 16rem;
 }
 
+/* a = 0, b = 0, c = 1 */
 h1 { 
   border: 0.2em solid white;
   font-family: "Andale Mono", AndaleMono, monospace;
@@ -27,6 +30,7 @@ h1 {
   padding: 0.25em;
 }
 
+/* a = 0, b = 0, c = 1 */
 h2 { 
   font-family: "Andale Mono", AndaleMono, monospace; 
   text-align: center;
@@ -36,11 +40,13 @@ h2 {
   border-style: dashed;
 }
 
+/* a = 0, b = 0, c = 1 */
 h3 {
   text-align: center;
   font-weight: bold;
 }
 
+/* a = 0, b = 1, c = 1 */
 .inicio > section {
   border: 0.2em solid black;
   background-color: azure;
@@ -48,10 +54,12 @@ h3 {
   height: auto;
 }
 
+/* a = 0, b = 0, c = 1 */
 p {
   margin: 0.75em;
 }
 
+/* a = 0, b = 1, c = 2 */
 .inicio section img {
   float: left;
   margin-left: 2em;
@@ -61,6 +69,7 @@ p {
   height: 25%;
 }
 
+/* a = 0, b = 1, c = 1 */
 .protagonistas section {
   display: flex;
   flex-direction: row;
@@ -69,14 +78,15 @@ p {
   padding: 0.5em;
   border: 0.25em solid black;
   background-color: azure;
-  margin: 0.75m;
 }
 
+/* a = 0, b = 0, c = 2 */
 .protagonistas section ul {
   border-left: 3em solid transparent;
   border-right: 3em solid transparent;
 }
 
+/* a = 0, b = 1, c = 1 */
 .protagonistas img {
   width: 25%;
   height: 25%;
@@ -84,15 +94,14 @@ p {
   border-radius: 1em;
 }
 
+/* a = 0, b = 0, c = 1 */
 ul {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  align-content: left;
-  justify-content: left;
   list-style-position: outside;
 }
 
+/* a = 0, b = 0, c = 1 */
 li {
   list-style: circle inside url(./multimedia/ghost.png);
   font-weight: bold;
@@ -102,16 +111,19 @@ li {
   font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 }
 
+/* a = 0, b = 0, c = 2 */
 nav + section { 
   border: 0.2em solid black;
   padding: 1%;
 }
 
+/* a = 0, b = 1, c = 1 */
 img.encabezado {
   padding-top: 0;
   padding-bottom: 5%;
 }
 
+/* a = 0, b = 0, c = 1 */
 table, tr, td {
   margin-left: auto;
   margin-right: auto;
@@ -122,6 +134,7 @@ table, tr, td {
   background-color: azure;
 }
 
+/* a = 0, b = 0, c = 1 */
 audio {
   margin: 0 auto;
   display: block;
@@ -130,6 +143,7 @@ audio {
   outline: none;
 }
 
+/* a = 0, b = 0, c = 1 */
 video {
   display: block;
   margin: 0 auto;
@@ -138,6 +152,7 @@ video {
   background-color: #000000;
 }
 
+/* a = 0, b = 0, c = 1 */
 a {
   font-family: "Andale Mono", AndaleMono, monospace;
   color: #000000;
@@ -147,20 +162,24 @@ a {
   text-decoration: none;
 }
 
+/* a = 0, b = 1, c = 3 */
 nav ul li:hover {
   background-color: black;
 }
 
+/* a = 0, b = 1, c = 4 */
 nav ul li:hover a {
   color: white;
 }
 
+/* a = 0, b = 0, c = 1 */
 footer {
   padding-top: 1.25em;
   text-align: center;
   font-size: 1.4em;
 }
 
+/* a = 0, b = 0, c = 2 */
 footer p {
   border: 0.05em solid black;
   background-color: azure;
@@ -171,6 +190,7 @@ footer p {
   text-align: center;
 }
 
+/* a = 0, b = 0, c = 2 */
 nav ul {
   display: flex;
   flex-wrap: wrap;
@@ -179,9 +199,93 @@ nav ul {
   justify-content: center;
 }
 
+/* a = 0, b = 0, c = 3 */
 nav ul li {
   background-color: azure;
   padding-left: 1em;
   padding-right: 1em;
   border: 0.15em solid black;
+}
+
+.galeria section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 20vw);
+  grid-row-gap: 7.5em;
+  justify-content: center;
+  padding-bottom: 5em;
+  overflow: auto;
+  height: auto;
+}
+
+.gallery__img {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+  min-height: 20em;
+  min-width: 20em;
+  border: 0.5em solid black;
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.gallery__item--2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.gallery__item--3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+.gallery__item--4 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.gallery__item--5 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.gallery__item--6 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+.gallery__item--7 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.gallery__item--8 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 3;
+}
+
+.gallery__item--9 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
 }
