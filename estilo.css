@@ -2,7 +2,6 @@
 body { 
   background-color: #C0C0C0; 
   font-family: Monaco, Consolas, "Lucida Console", monospace;
-  overflow: auto;
   min-width: 53em;
   font-weight: 100;
   background-image: linear-gradient(to bottom, silver, grey);
@@ -50,7 +49,6 @@ h3 {
 .inicio > section {
   border: 0.2em solid black;
   background-color: azure;
-  overflow: auto;
   height: auto;
 }
 
@@ -61,7 +59,6 @@ p {
 
 /* a = 0, b = 1, c = 2 */
 .inicio section img {
-  float: left;
   margin-left: 2em;
   margin-right: 2em;
   margin-bottom: 2em;
@@ -71,10 +68,6 @@ p {
 
 /* a = 0, b = 1, c = 1 */
 .protagonistas section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
   padding: 0.5em;
   border: 0.25em solid black;
   background-color: azure;
@@ -92,13 +85,6 @@ p {
   height: 25%;
   min-width: 300px;
   border-radius: 1em;
-}
-
-/* a = 0, b = 0, c = 1 */
-ul {
-  display: flex;
-  flex-direction: column;
-  list-style-position: outside;
 }
 
 /* a = 0, b = 0, c = 1 */
@@ -137,7 +123,6 @@ table, tr, td {
 /* a = 0, b = 0, c = 1 */
 audio {
   margin: 0 auto;
-  display: block;
   padding-top: 0.5em;
   height: 2em;
   outline: none;
@@ -145,7 +130,6 @@ audio {
 
 /* a = 0, b = 0, c = 1 */
 video {
-  display: block;
   margin: 0 auto;
   width: auto;
   height: auto;
@@ -183,20 +167,8 @@ footer {
 footer p {
   border: 0.05em solid black;
   background-color: azure;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   min-width: fit-content;
   text-align: center;
-}
-
-/* a = 0, b = 0, c = 2 */
-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: center;
 }
 
 /* a = 0, b = 0, c = 3 */
@@ -209,13 +181,7 @@ nav ul li {
 
 /* a = 0, b = 1, c = 1 */
 .galeria section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 20vw);
-  grid-row-gap: 7.5em;
-  justify-content: center;
   padding-bottom: 5em;
-  overflow: auto;
   height: auto;
 }
 
@@ -227,76 +193,4 @@ nav ul li {
   min-height: 20em;
   min-width: 20em;
   border: 0.5em solid black;
-}
-
-/* a = 0, b = 1, c = 0 */
-.gallery__item--1 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-
-/* a = 0, b = 1, c = 0 */
-.gallery__item--2 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-
-/* a = 0, b = 1, c = 0 */
-.gallery__item--3 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 1;
-}
-
-/* a = 0, b = 1, c = 0 */
-.gallery__item--4 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 2;
-}
-
-/* a = 0, b = 1, c = 0 */
-.gallery__item--5 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 2;
-}
-
-/* a = 0, b = 1, c = 0 */
-.gallery__item--6 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 2;
-}
-
-/* a = 0, b = 1, c = 0 */
-.gallery__item--7 {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 3;
-}
-
-/* a = 0, b = 1, c = 0 */
-.gallery__item--8 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 3;
-}
-
-/* a = 0, b = 1, c = 0 */
-.gallery__item--9 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 3;
 }
