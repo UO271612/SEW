@@ -9,7 +9,7 @@ body {
 
 header { 
   text-align: center; 
-  background-image: url(./images/header.jpg);
+  background-image: url(./multimedia/header.jpg);
   border: 0.1875em solid black;
   border-style: double;
   padding-left: 16rem;
@@ -36,17 +36,63 @@ h2 {
   border-style: dashed;
 }
 
+h3 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.inicio > section {
+  border: 0.2em solid black;
+  background-color: azure;
+}
+
+p {
+  margin: 0.75em;
+}
+
+.inicio section img {
+  float: left;
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 2em;
+  width: 25%;
+  height: 25%;
+}
+
+.protagonistas section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+  border: 0.25em solid black;
+  background-color: azure;
+  margin: 0.75m;
+}
+
+.protagonistas section ul {
+  border-left: 3em solid transparent;
+  border-right: 3em solid transparent;
+}
+
+.protagonistas img {
+  width: 25%;
+  height: 25%;
+  min-width: 300px;
+  border-radius: 1em;
+}
+
 ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+  align-items: left;
+  align-content: left;
+  justify-content: left;
   list-style-position: outside;
 }
 
 li {
-  list-style: circle inside url(./images/ghost.png);
+  list-style: circle inside url(./multimedia/ghost.png);
   font-weight: bold;
   text-align: left;
   padding: 0.125em;
@@ -113,8 +159,13 @@ footer {
   font-size: 1.4em;
 }
 
+footer p {
+  background-color: azure;
+}
+
 nav ul {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: baseline;
   justify-content: center;
@@ -125,13 +176,6 @@ nav ul li {
   padding-left: 1em;
   padding-right: 1em;
   border: 0.15em solid black;
-  min-width: 0.3em;
-}
-
-p {
-  border: 0.2em solid black;
-  padding: 0.1em;
-  background-color: azure;
 }
 
 footer p {
