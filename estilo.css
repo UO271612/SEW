@@ -44,6 +44,8 @@ h3 {
 .inicio > section {
   border: 0.2em solid black;
   background-color: azure;
+  overflow: auto;
+  height: auto;
 }
 
 p {
@@ -160,7 +162,13 @@ footer {
 }
 
 footer p {
+  border: 0.05em solid black;
   background-color: azure;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  min-width: fit-content;
+  text-align: center;
 }
 
 nav ul {
@@ -176,13 +184,4 @@ nav ul li {
   padding-left: 1em;
   padding-right: 1em;
   border: 0.15em solid black;
-}
-
-footer p {
-  border: 0.05em solid black;
-  background-color: none;
-  margin-left: 35rem auto;
-  margin-right: 35rem auto;
-  min-width: fit-content;
-  text-align: center;
 }
