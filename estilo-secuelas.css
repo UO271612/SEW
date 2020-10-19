@@ -96,15 +96,10 @@ a {
   font-weight: bold;
   padding-left: 1em;
   padding-right: 1em;
-  text-decoration: none;
 }
 
-nav ul li:hover {
-  background-color: black;
-}
-
-nav ul li:hover a {
-  color: white;
+a:hover {
+  color: grey;
 }
 
 footer {
@@ -125,7 +120,6 @@ nav ul li {
   padding-left: 1em;
   padding-right: 1em;
   border: 0.15em solid black;
-  min-width: 0.3em;
 }
 
 p {
@@ -141,4 +135,14 @@ footer p {
   margin-right: 35rem auto;
   min-width: fit-content;
   text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  clear: right;
+}
+
+main img {
+  float: left;
 }
