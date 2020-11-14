@@ -1,3 +1,3 @@
 document.write("<h2>");
-document.write(asignatura.titulacion);
+document.write(infoNavegador.idioma);
 document.write("</h2>");
