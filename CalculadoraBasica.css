@@ -16,6 +16,7 @@ body {
 
 .calculadora label {
     display: none;
+    color: white;
 }
 
 input[name="display"] {
@@ -33,12 +34,12 @@ input[name="display"] {
 
 .memoria {
     background-color: gray;
-    color: white;
     font-family: "Andale Mono", AndaleMono, monospace;
 }
 
 .operador {
     background-color: crimson;
+    color: white;
     font-family: "Andale Mono", AndaleMono, monospace;
 }
 
