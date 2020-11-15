@@ -5,6 +5,10 @@ body {
 .calculadora {
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
     border: 0.5em solid black;
     border-style: none;
     border-radius: 1em;
@@ -19,11 +23,28 @@ body {
 	color: white;
 }
 
-input[name="display"] {
+#pantalla {
     margin-bottom: 0.25em;
     background-color: darkseagreen;
     font-family: "Andale Mono", AndaleMono, monospace;
-    font-size: 3em;
+    font-size: 2em;
+    overflow: auto;
+    text-align: right;
+    vertical-align: bottom;
+    height: 5em;
+    box-sizing: border-box;
+    padding-right: 0.2em;
+    padding-left: 0.2em;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#pantalla * {
+    margin: 0;
+}
+
+#entrada {
+    border-top: 0.1em solid black;
 }
 
 .botones {
@@ -48,7 +69,7 @@ input[name="display"] {
     font-family: "Andale Mono", AndaleMono, monospace;
 }
 
-.igual {
+.enter {
     background-color: orange;
     font-family: "Andale Mono", AndaleMono, monospace;
 }
