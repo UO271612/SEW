@@ -3,16 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
-        <title>Ejercicio 3</title>
-        <link rel="stylesheet" type="text/css" href="CalculadoraBasica.css"/>
-        <script src="CalculadoraBasica.js"></script>
+        <title>Ejercicio 4</title>
+        <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css"/>
+        <script src="CalculadoraCientifica.js"></script>
     </head>
     <body>
-        <h1>Calculadora básica</h1>
+        <h1>Calculadora científica</h1>
         <div class="calculadora">
-            <label for="pantalla">Pantalla de la calculadora:</label>
+			<label for="pantalla">Pantalla de la calculadora:</label>
             <input type="text" value ="" name="display" id="pantalla" readonly/>
             <div class="botones">
+                <input type="button" name="Raíz cuadrada" value = "√"  onclick="calculadora.raizCuadrada()" class="funcion"/>
+                <input type="button" name="Número e" value = "e"  onclick="calculadora.numeroE()" class="funcion"/>
+                <input type="button" name="Exponente base 10" value = "exp"  onclick="calculadora.exp()" class="funcion"/>
+                <input type="button" name="Logaritmo" value = "log"  onclick="calculadora.log()" class="funcion"/>
+
+                <input type="button" name="Arcoseno" value = "asin"  onclick="calculadora.arcoSeno()" class="funcion"/>
+                <input type="button" name="Arcocoseno" value = " acos " onclick="calculadora.arcoCoseno()" class="funcion"/>
+                <input type="button" name="Arcotangente" value = " atan " onclick="calculadora.arcoTangente()" class="funcion"/>
+                <input type="button" name="Potencia" value = " xⁿ " onclick="calculadora.potencial()" class="funcion"/>
+
+                <input type="button" name="Seno" value = " sin " onclick="calculadora.seno()" class="funcion"/>
+                <input type="button" name="Coseno" value = " cos " onclick="calculadora.coseno()" class="funcion"/>
+                <input type="button" name="Tangente" value = " tan " onclick="calculadora.tangente()" class="funcion"/>
+                <input type="button" name="Función cuadrado" value = " x² " onclick="calculadora.cuadrado()" class="funcion"/>
                 <input type="button" name="Recuperar memoria" value=" mrc " onclick="calculadora.mrc()" class="memoria"/>
                 <input type="button" name="Restar de memoria" value=" m- " onclick="calculadora.mMenos()" class="memoria"/>
                 <input type="button" name="Sumar a memoria" value=" m+ " onclick="calculadora.mMas()" class="memoria"/>
@@ -33,10 +47,10 @@
                 <input type="button" name="3" value=" 3 " onclick="calculadora.digitos(3)"/>
                 <input type="button" name="Suma" value=" + " onclick="calculadora.suma()" class="operador"/>
 
+                <input type="button" name="Borrar" value=" C " onclick="calculadora.borrar()"/>
                 <input type="button" name="0" value=" 0 " onclick="calculadora.digitos(0)"/>
                 <input type="button" name="Punto decimal" value=" . " onclick="calculadora.punto()"/>
-                <input type="button" name="Borrar" value=" C " onclick="calculadora.borrar()"/>
-                <input type="button" name="Igual" value=" = " onclick="calculadora.igual()"/>
+                <input type="button" name="Igual" value=" = " onclick="calculadora.igual()" class="igual"/>
             </div>
         </div>
         <footer>

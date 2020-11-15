@@ -8,7 +8,7 @@ body {
     border: 0.5em solid black;
     border-style: none;
     border-radius: 1em;
-    width: 15em;
+    width: 25em;
     margin: 2em;
     padding: 1em;
     background-color: darkslategrey;
@@ -16,7 +16,7 @@ body {
 
 .calculadora label {
     display: none;
-    color: white;
+	color: white;
 }
 
 input[name="display"] {
@@ -40,7 +40,17 @@ input[name="display"] {
 .operador {
     background-color: crimson;
     font-family: "Andale Mono", AndaleMono, monospace;
-    color: white;
+	color: white;
+}
+
+.funcion {
+    background-color: cadetblue;
+    font-family: "Andale Mono", AndaleMono, monospace;
+}
+
+.igual {
+    background-color: orange;
+    font-family: "Andale Mono", AndaleMono, monospace;
 }
 
 .botones input {
