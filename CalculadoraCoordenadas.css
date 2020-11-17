@@ -118,3 +118,7 @@ button {
 input {
     text-align: center;
 }
+
+.hidden {
+    display: none;
+}

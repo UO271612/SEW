@@ -22,11 +22,11 @@
                     <input type="text" value="" name="huso1" id="huso1" class="huso">
                     <select id="hemisferio1">
                         <option>Hemisferio</option>
-                        <option label="Norte">N</option>
-                        <option label="Sur">S</option>
+                        <option value="N" label="Norte">N</option>
+                        <option value="S" label="Sur">S</option>
                     </select>
 
-                    <image src="./arrow.png" onclick="convertirPrimeraCoordenada()" class="flecha"/>
+                    <img src="./arrow.png" onclick="convertirPrimeraCoordenada()" onfocus="convertirPrimeraCoordenada()" class="flecha" id="flecha1" tabindex="0"/>
 
                     <label for="latitud1">Latitud Punto 1:</label>
                     <input type="text" value="" name="latitud1" id="latitud1" class="entrada" readonly>
@@ -35,10 +35,11 @@
                 </div>
 
                 <div class="distancia">
-                    <button onclick="mostrarDistancia()">Calcular distancia</button>
+                    <label for="mostrarDistancia" class="hidden"></label>
+                    <button id="mostrarDistancia" onclick="mostrarDistancia()" onfocus="mostrarDistancia()">Calcular distancia</button>
                     <label for="resultado">Distancia:</label>
                     <input type="text" value="" name="resultado" id="resultado" class="resultado" readonly>
-                    <p onclick="ayuda()">¿Necesitas ayuda?</p>
+                    <p id="ayuda" onclick="ayuda()" onfocus="ayuda()" tabindex="0">¿Necesitas ayuda?</p>
                 </div>
 
                 <div class="entrada">
@@ -54,7 +55,7 @@
                         <option label="Sur" value="S">S</option>
                     </select>
 
-                    <image src="./arrow.png" onclick="convertirSegundaCoordenada()" class="flecha"/>
+                    <img src="./arrow.png" onclick="convertirSegundaCoordenada()" onfocus="convertirSegundaCoordenada()" class="flecha" id="flecha2" tabindex="0"/>
 
                     <label for="latitud2">Latitud Punto 2:</label>
                     <input type="text" value="" name="latitud2" id="latitud2" class="entrada" readonly>
