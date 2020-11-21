@@ -34,10 +34,14 @@ body {
 }
 
 #botones {
-    display: grid;
-    grid-template-columns: repeat(6, 0.15fr);
-    grid-gap: 0.5em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+}
+
+#botones input {
+    margin: 0.25em;
 }
 
 input[type="button"] {
