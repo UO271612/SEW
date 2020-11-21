@@ -1,70 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" type="text/css" href="CalculadoraCoordenadas.css">
-        <script src="CalculadoraCoordenadas.js"></script>
-        <title>Ejercicio 6</title>
-    </head>
-    <body>
-        <section class="calculadora">
-            <h1>Calculadora de Coordenadas</h1>
-            <h2>UTM a Latitud/Longitud</h2>
 
-            <div id="entradas">
-                <div class="entrada">
-                    <label for="x1">Coordenada X:</label>
-                    <input type="text" value="" name="x1" id="x1" class="entrada">
-                    <label for="y1">Coordenada Y:</label>
-                    <input type="text" value="" name="y1" id="y1" class="entrada">
-                    <label for="huso1">Huso UTM:</label>
-                    <input type="text" value="" name="huso1" id="huso1" class="huso">
-                    <label for="hemisferio1" class="hidden">Hemisferio:</label>
-                    <select id="hemisferio1" name="hemisferio1">
-                        <option>Hemisferio</option>
-                        <option value="N" label="Norte">N</option>
-                        <option value="S" label="Sur">S</option>
-                    </select>
+<head>
+    <title>Ejercicio 7</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="Ejercicio7.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="Ejercicio7.js"></script>
+</head>
 
-                    <img src="./arrow.png" alt="Convertir coordenadas del primer punto" onclick="convertirPrimeraCoordenada()" onfocus="convertirPrimeraCoordenada()" class="flecha" id="flecha1" tabindex="0"/>
-
-                    <label for="latitud1">Latitud Punto 1:</label>
-                    <input type="text" value="" name="latitud1" id="latitud1" class="entrada" readonly>
-                    <label for="longitud1">Longitud Punto 1:</label>
-                    <input type="text" value="" name="longitud1" id="longitud1" class="entrada" readonly>
-                </div>
-
-                <div class="distancia">
-                    <label for="mostrarDistancia" class="hidden">Mostrar distancia</label>
-                    <button id="mostrarDistancia" onclick="mostrarDistancia()" onfocus="mostrarDistancia()">Calcular distancia</button>
-                    <label for="resultado">Distancia:</label>
-                    <input type="text" value="" name="resultado" id="resultado" class="resultado" readonly>
-                    <p id="ayuda" onclick="ayuda()" onfocus="ayuda()" tabindex="0">¿Necesitas ayuda?</p>
-                </div>
-
-                <div class="entrada">
-                    <label for="x2">Coordenada X:</label>
-                    <input type="text" value="" name="x2" id="x2" class="entrada">
-                    <label for="y2">Coordenada Y:</label>
-                    <input type="text" value="" name="y2" id="y2" class="entrada">
-                    <label for="huso2">Huso UTM:</label>
-                    <input type="text" value="" name="huso2" id="huso2" class="huso">
-                    <label for="hemisferio2" class="hidden">Hemisferio:</label>
-                    <select id="hemisferio2">
-                        <option>Hemisferio</option>
-                        <option label="Norte" value="N">N</option>
-                        <option label="Sur" value="S">S</option>
-                    </select>
-
-                    <img src="./arrow.png" alt="Convertir coordenadas del segundo punto" onclick="convertirSegundaCoordenada()" onfocus="convertirSegundaCoordenada()" class="flecha" id="flecha2" tabindex="0"/>
-
-                    <label for="latitud2">Latitud Punto 2:</label>
-                    <input type="text" value="" name="latitud2" id="latitud2" class="entrada" readonly>
-                    <label for="longitud2">Longitud Punto 2:</label>
-                    <input type="text" value="" name="longitud2" id="longitud2" class="entrada" readonly>
-                </div>
+<body>
+    <div id="contenido">
+        <div id="texto">
+            <h1 id="h1">Ventas de Smartphones</h1>
+            <h2 id="h2">Software y Estándares para la Web</h2>
+            <h3 id="h3">Samuel Rodríguez Ares (UO271612)</h3>
+        </div>
+        <div id="estadisticas">
+            <p id="p">Estas son las ventas de la última semana:</p>
+            <table id="table">
+                <tr class="fila">
+                    <th>Fabricante</th>
+                    <th>Modelo</th>
+                    <th>Unidades vendidas</th>
+                </tr>
+                <tr class="fila">
+                    <td>Samsung</td>
+                    <td>Galaxy A51</td>
+                    <td>27</td>
+                </tr>
+                <tr class="fila">
+                    <td>Apple</td>
+                    <td>iPhone 12</td>
+                    <td>78</td>
+                </tr>
+                <tr class="fila">
+                    <td>OPPO</td>
+                    <td>realme 7</td>
+                    <td>21</td>
+                </tr>
+                <tr class="fila">
+                    <td>Xiaomi</td>
+                    <td>Redmi Note 9S</td>
+                    <td>94</td>
+                </tr>
+            </table>
+            <div id="estadisticasVer">
+                <input type="button" id="botonVerVentas" onclick="listener.verVentas()" value="Ver Ventas"></button>
+                <input type="button" id="botonVerCuota" onclick="listener.verCuotas()" value="Ver Cuotas"></button>
             </div>
-        </section>
-    </body>
+            <div id="estadisticasImagen">
+                <input type="button" id="botonAdjuntarImagen" onclick="listener.adjuntarImagen()"
+                    value="Adjuntar Imagen"></button>
+                <input type="button" id="botonEliminarImagen" onclick="listener.eliminarImagen()"
+                    value="Eliminar Imagen"></button>
+            </div>
+            <div id="botonesSumar">
+                <input type="button" id="botonCalcularFilasTablaCuotas" onclick="listener.calcularFilasTablaCuotas()"
+                    value="Sumar Filas Cuotas"></button>
+                <input type="button" id="botonCalcularColumnasTablaCuotas"
+                    onclick="listener.calcularColumnasTablaCuotas()" value="Sumar Columnas Cuotas"></button>
+            </div>
+        </div>
+    </div>
+    <div id="botones">
+        <input type="button" id="botonH1" onclick="listener.toggleH1()" value="Ocultar h1"></button>
+        <input type="button" id="botonH2" onclick="listener.toggleH2()" value="Ocultar h2"></button>
+        <input type="button" id="botonH3" onclick="listener.toggleH3()" value="Ocultar h3"></button>
+        <input type="button" id="botonP" onclick="listener.toggleP()" value="Ocultar Párrafo"></button>
+        <input type="button" id="botonTable" onclick="listener.toggleTable()" value="Ocultar Tabla"></button>
+        <input type="button" id="botonRecorrer" onclick="listener.recorrerDOM()" value="Recorrer Árbol DOM"></button>
+    </div>
+</body>
+
 </html>
