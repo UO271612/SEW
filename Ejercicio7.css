@@ -51,6 +51,9 @@ input[type="button"] {
 
 #estadisticas > p {
     color: black;
+    background-color: white;
+    border: 0.2em solid black;
+    padding: 0.1em;
 }
 
 #estadisticasVer {
