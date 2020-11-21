@@ -17,10 +17,14 @@ table {
 td {
     padding: 0.3em;
     border: 0.2em solid black;
+    background-color: white;
+    color: black;
 }
 
 th {
     border: 0.2em solid black;
+    background-color: white;
+    color: black;
 }
 
 body {
@@ -43,6 +47,10 @@ input[type="button"] {
 
 #estadisticas {
     display: grid;
+}
+
+#estadisticas > p {
+    color: black;
 }
 
 #estadisticasVer {
