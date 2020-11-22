@@ -61,3 +61,7 @@ h1 {
 .grados img {
     flex-shrink: 0;
 }
+
+.hidden {
+    display: none;
+}
