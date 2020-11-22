@@ -5,7 +5,7 @@ class MeteoAPI {
         this.pais = "ES";
         this.unidades = "metric";
         this.idioma = "es";
-        this.url = "http://api.openweathermap.org/data/2.5/weather?q=ciudad," + this.pais + "&units=" + this.unidades
+        this.url = "https://api.openweathermap.org/data/2.5/weather?q=ciudad," + this.pais + "&units=" + this.unidades
             + "&lang=" + this.idioma + "&APPID=" + this.apiKey;
 
         this.datosCargados = false;
