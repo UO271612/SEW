@@ -3,9 +3,18 @@ body {
     background-color: cadetblue;
 }
 
+section {
+    text-align: center;
+}
+
 h1 {
     text-align: center;
     color: black;
+    background-color: white;
+    border: 0.25em solid black;
+    padding: 0.25em;
+    display: inline-block;
+    margin-bottom: 1em;
 }
 
 #contenido {
