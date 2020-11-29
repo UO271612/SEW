@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width"/>
-        <title>Ejercicio 11 - Tarea 1</title>
-        <link rel="stylesheet" type="text/css" href="Ejercicio11-Tarea1.css"/>
-        <script src="Ejercicio11-Tarea1.js"></script>
-    </head>
-    <body>
-        <section>
-            <h1>GeoLocalización</h1>
-            <p class="hidden">UO271612</p>
-            <div id="contenido">
-                    <input type="button" id="botonPosicion" value="Obtener mi posición" onclick="posicionGPS.mostrarInfoEn('posicion')"/>
-                    <div id="posicion">
 
-                    </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Ejercicio 11 - Tarea 6</title>
+    <link rel="stylesheet" type="text/css" href="Ejercicio11-Tarea6.css" />
+    <script src="Ejercicio11-Tarea6.js"></script>
+</head>
+
+<body>
+    <div id="contenido">
+        <img src="https://logos-world.net/wp-content/uploads/2020/05/Xiaomi-Logo.png" alt="Logo de Xiaomi" width="300"
+        height="150" />
+        <section>
+            <h1>Localizador de Mi Stores oficiales</h1>
+            <div class="descripcion">
+                <p>Xiaomi es el fabricante de teléfonos móviles más popular en España.</p>
+                <p>Conoce los puntos de venta actualmente autorizados por la empresa.</p>
             </div>
+            <div id="mapa">
+
+            </div>
+            <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU&callback=mapaDinamico.initMap"></script>
+
+            <p id="about">Desarrollado por Samuel Rodríguez Ares</p>
         </section>
-    </body>
+    </div>
+</body>
+
 </html>
