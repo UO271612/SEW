@@ -1,6 +1,6 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: lightgray;
+    background-color: lightblue;
     font-family: "Andale Mono", AndaleMono, monospace;
 }
 
@@ -68,4 +68,15 @@ section {
 .texto {
     text-align: left;
     font-weight: lighter;
+}
+
+#mapa {
+    margin-top: 2em;
+    height: 500px;
+    width: 50%;
+}
+
+#error {
+    color: red;
+    font-weight: bold;
 }
