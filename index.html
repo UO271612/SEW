@@ -3,21 +3,21 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width"/>
-        <title>Ejercicio 13 - Tarea 1</title>
-        <link rel="stylesheet" type="text/css" href="Ejercicio13-Tarea1.css"/>
+        <title>Ejercicio 9</title>
+        <link rel="stylesheet" type="text/css" href="Ejercicio9.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="Ejercicio13-Tarea1.js"></script>
+        <script src="Ejercicio9.js"></script>
     </head>
     <body>
-        <section id="contenido">
-            <h1>Mostrar KML con Google Maps</h1>
-            <label for="selectorFicheros" class="hidden">Seleccionar archivos</label>
-            <input type="file" id="selectorFicheros" name="selectorFicheros" onchange="gestorMapaKML.cargar(this.files)"/>
-            <div id="mapa">
+        <section>
+            <h1>Información Meteorológica</h1>
+            <p class="hidden">UO271612</p>
+            <div id="contenido">
+                    <input type="button" id="botonDatos" value="Obtener Datos" onclick="meteoApi.accionDatos()"/>
+                    <div id="ciudades">
 
+                    </div>
             </div>
-            <script
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU"></script>
         </section>
     </body>
 </html>
