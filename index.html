@@ -3,19 +3,21 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width"/>
-        <title>Ejercicio 12</title>
-        <link rel="stylesheet" type="text/css" href="Ejercicio12.css"/>
+        <title>Ejercicio 13 - Tarea 1</title>
+        <link rel="stylesheet" type="text/css" href="Ejercicio13-Tarea1.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="Ejercicio12.js"></script>
+        <script src="Ejercicio13-Tarea1.js"></script>
     </head>
     <body>
-        <section>
-            <h1>Ejercicio 12 - API File</h1>
+        <section id="contenido">
+            <h1>Mostrar KML con Google Maps</h1>
             <label for="selectorFicheros" class="hidden">Seleccionar archivos</label>
-            <input type="file" id="selectorFicheros" name="selectorFicheros" onchange="gestorFicheros.cargar(this.files)" multiple/>
-            <div id="archivos">
+            <input type="file" id="selectorFicheros" name="selectorFicheros" onchange="gestorMapaKML.cargar(this.files)"/>
+            <div id="mapa">
 
             </div>
+            <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6j4mF6blrc4kZ54S6vYZ2_FpMY9VzyRU"></script>
         </section>
         <footer>
             <a href="http://validator.w3.org/check/referer" hreflang="en-us">
