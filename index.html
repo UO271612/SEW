@@ -3,18 +3,17 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width"/>
-        <title>Ejercicio 10</title>
-        <link rel="stylesheet" type="text/css" href="Ejercicio10.css"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="Ejercicio10.js"></script>
+        <title>Ejercicio 11 - Tarea 1</title>
+        <link rel="stylesheet" type="text/css" href="Ejercicio11-Tarea1.css"/>
+        <script src="Ejercicio11-Tarea1.js"></script>
     </head>
     <body>
         <section>
-            <h1>Cotizaciones en Bolsa</h1>
+            <h1>GeoLocalización</h1>
             <p class="hidden">UO271612</p>
             <div id="contenido">
-                    <input type="button" id="botonDatos" value="Obtener Últimos Datos del Mercado" onclick="marketStackApi.accionDatos()"/>
-                    <div id="tickers">
+                    <input type="button" id="botonPosicion" value="Obtener mi posición" onclick="posicionGPS.mostrarInfoEn('posicion')"/>
+                    <div id="posicion">
 
                     </div>
             </div>
