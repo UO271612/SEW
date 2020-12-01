@@ -8,7 +8,6 @@ canvas {
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
     background-color: darkseagreen;
     font-family: "Andale Mono", AndaleMono, monospace;
@@ -49,6 +48,7 @@ section {
     border-radius: 0.5em;
     padding: 0.5em;
     background-color: white;
+    color: black;
 }
 
 .autor {
@@ -64,6 +64,7 @@ section {
 #ayuda {
     background-color: lightgray;
     font-weight: bold;
+    color: black;
 }
 
 .adicional {
