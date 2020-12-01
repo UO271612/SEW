@@ -24,16 +24,9 @@ h1 {
     align-items: center;
 }
 
-#contenido input {
-    font-size: 1.25em;
-}
-
-#posicion {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-top: 2em;
-    font-weight: bold;
+#mapa {
+    height: 500px;
+    width: 50%;
 }
 
 .hidden {
