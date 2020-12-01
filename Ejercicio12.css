@@ -43,7 +43,7 @@ section {
     border-radius: 0.5em;
     padding: 0.5em;
     background-color: white;
-    overflow-x: auto;
+    overflow: auto;
 }
 
 .archivo > .cuerpo {
