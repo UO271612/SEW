@@ -74,11 +74,11 @@ class Listener {
         + "<th>Modelo</th> <th>Unidades vendidas</th> </tr> <tr> <td>Samsung</td> <td>Galaxy A51</td> <td>27</td> </tr> <tr> <td>Apple</td> " 
         + "<td>iPhone 12</td> <td>78</td> </tr> <tr> <td>OPPO</td> <td>realme 7</td> <td>21</td> </tr> <tr> <td>Xiaomi</td> <td>Redmi Note 9S</td> "
         + "<td>94</td> </tr> </table> <div id='estadisticasVer'> <input type='button' id='botonVerVentas' onclick='listener.verVentas()' "
-        + "value='Ver Ventas'></button> <input type='button' id='botonVerCuota' onclick='listener.verCuotas()' value='Ver Cuotas'></button> </div> "
-        + "<div id='estadisticasImagen'> <input type='button' id='botonAdjuntarImagen' onclick='listener.adjuntarImagen()' value='Adjuntar Imagen'></button> "
-        + "<input type='button' id='botonEliminarImagen' onclick='listener.eliminarImagen()' value='Eliminar Imagen'></button> </div> <div id='botonesSumar'> <input type='button' id='botonCalcularFilasTablaCuotas' "
-        + "onclick='listener.calcularFilasTablaCuotas()' value='Sumar Filas Cuotas'></button> <input type='button' id='botonCalcularColumnasTablaCuotas' onclick='listener.calcularColumnasTablaCuotas()' "
-        + "value='Sumar Columnas Cuotas'></button> </div>");
+        + "value='Ver Ventas'/> <input type='button' id='botonVerCuota' onclick='listener.verCuotas()' value='Ver Cuotas'/> </div> "
+        + "<div id='estadisticasImagen'> <input type='button' id='botonAdjuntarImagen' onclick='listener.adjuntarImagen()' value='Adjuntar Imagen'/> "
+        + "<input type='button' id='botonEliminarImagen' onclick='listener.eliminarImagen()' value='Eliminar Imagen'/> </div> <div id='botonesSumar'> <input type='button' id='botonCalcularFilasTablaCuotas' "
+        + "onclick='listener.calcularFilasTablaCuotas()' value='Sumar Filas Cuotas'/> <input type='button' id='botonCalcularColumnasTablaCuotas' onclick='listener.calcularColumnasTablaCuotas()' "
+        + "value='Sumar Columnas Cuotas'/> </div>");
         
         this.cuotas = false;
     }
@@ -87,12 +87,12 @@ class Listener {
         $("#estadisticas").html("<p id='p'>Estas es la cuota de mercado de los fabricantes:</p> <table id='table'> <tr> <th>Fabricante</th> <th>Cuota</th> "
         + "<th>Crecimiento</th><th>Total</th> </tr> <tr> <td>Samsung</td> <td>26%</td> <td>+6%</td> <td></td> </tr> <tr> <td>Apple</td> <td>7%</td> <td>+24%</td> <td></td></tr> "
         + "<tr> <td>OPPO</td> <td>8%</td> <td>+1456%</td> <td></td></tr> <tr> <td>Xiaomi</td> <td>34%</td> <td>+93%</td> <td></td></tr><tr><td>Total</td><td></td><td></td></tr> </table>  "
-        + "<div id='estadisticasVer'> <input type='button' id='botonVerVentas' onclick='listener.verVentas()' value='Ver Ventas'></button> "
-        + "<input type='button' id='botonVerCuota' onclick='listener.verCuotas()' value='Ver Cuotas'></button> </div> <div id='estadisticasImagen'> "
-        + "<input type='button' id='botonAdjuntarImagen' onclick='listener.adjuntarImagen()' value='Adjuntar Imagen'></button> <input type='button' id='botonEliminarImagen' "
-        + "onclick='listener.eliminarImagen()' value='Eliminar Imagen'></button> </div> <div id='botonesSumar'> <input type='button' id='botonCalcularFilasTablaCuotas' "
-        + "onclick='listener.calcularFilasTablaCuotas()' value='Sumar Filas Cuotas'></button> <input type='button' id='botonCalcularColumnasTablaCuotas' onclick='listener.calcularColumnasTablaCuotas()' "
-        + "value='Sumar Columnas Cuotas'></button> </div>");
+        + "<div id='estadisticasVer'> <input type='button' id='botonVerVentas' onclick='listener.verVentas()' value='Ver Ventas'/> "
+        + "<input type='button' id='botonVerCuota' onclick='listener.verCuotas()' value='Ver Cuotas'/> </div> <div id='estadisticasImagen'> "
+        + "<input type='button' id='botonAdjuntarImagen' onclick='listener.adjuntarImagen()' value='Adjuntar Imagen'/> <input type='button' id='botonEliminarImagen' "
+        + "onclick='listener.eliminarImagen()' value='Eliminar Imagen'/> </div> <div id='botonesSumar'> <input type='button' id='botonCalcularFilasTablaCuotas' "
+        + "onclick='listener.calcularFilasTablaCuotas()' value='Sumar Filas Cuotas'/> <input type='button' id='botonCalcularColumnasTablaCuotas' onclick='listener.calcularColumnasTablaCuotas()' "
+        + "value='Sumar Columnas Cuotas'/> </div>");
 
         this.cuotas = true;
     }
