@@ -1,10 +1,11 @@
 "use strict";
 class GeoLocalizacion {
     constructor() {
-        navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this));
+        navigator.geolocation.getCurrentPosition(this.getPosicion.bind(this), this.mostrarError.bind(this));
     }
 
     getPosicion(posicion) {
+        this.mensaje = "Ubicación obtenida con éxito";
         this.longitud = posicion.coords.longitude;
         this.latitud = posicion.coords.latitude;
         this.precision = posicion.coords.accuracy;
@@ -18,7 +19,7 @@ class GeoLocalizacion {
 
     mostrarInfoEn(elemento) {
         var elementoAEscribir = document.getElementById(elemento);
-        var stringDatos = ""; 
+        var stringDatos = "<p>" + this.mensaje + "</p>"; 
 
         stringDatos += "<p>Tu longitud es: " + this.longitud + " grados</p>"; 
         stringDatos += "<p>Tu latitud es: " + this.latitud + " grados</p>"; 
@@ -46,6 +47,23 @@ class GeoLocalizacion {
             this.rumbo = "No definido";
         if (this.velocidad == null)
             this.velocidad = "No definida";
+    }
+
+    mostrarError(error) {
+        switch (error.code) {
+            case error.PERMISSION_DENIED:
+                this.mensaje = "No has concedido permiso a esta página web para acceder a tu ubicación.";
+                break;
+            case error.POSITION_UNAVAILABLE:
+                this.mensaje = "La información de geolocalización no se encuentra actualmente disponible.";
+                break;
+            case error.TIMEOUT:
+                this.mensaje = "La petición de geolocalización ha caducado.";
+                break;
+            case error.UNKNOWN_ERROR:
+                this.mensaje = "Se ha producido un error desconocido.";
+                break;
+        }
     }
 }
 
