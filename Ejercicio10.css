@@ -1,10 +1,11 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: lightcyan;
+    background-color: black;
 }
 
 h1 {
     text-align: center;
+    color: white;
 }
 
 #contenido {
@@ -18,21 +19,25 @@ h1 {
     font-size: 1.25em;
 }
 
-#ciudades {
+#tickers {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.ciudad {
+.empresa {
     display: flex;
     flex-direction: column;
     margin: 1.5em;
     align-items: center;
-    border: 0.15em solid black;
+    border: 0.5em solid white;
     border-radius: 0.5em;
     padding: 0.5em;
-    background-color: lightskyblue;
+    background-color: orange;
+}
+
+.empresa > .cuerpo {
+    align-items: center;
 }
 
 .encabezado {
@@ -45,23 +50,19 @@ h1 {
 
 .encabezado * {
     margin: 0;
-    padding-bottom: 0.1em;
+    padding-bottom: 0.35em;
 }
 
-.grados {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.grados p {
-    vertical-align: center;
-}
-
-.grados img {
-    flex-shrink: 0;
+.intercambio {
+    font-size: 0.75em;
 }
 
 .hidden {
     display: none;
+}
+
+.actualizacion {
+    font-size: 1em;
+    font-family: "Andale Mono", AndaleMono, monospace;
+    font-weight: bold;
 }
