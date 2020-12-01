@@ -1,8 +1,11 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: lightgray;
-    font-family: "Andale Mono", AndaleMono, monospace;
-    overflow-x: auto;
+    font-family: "Andale Mono", AndaleMono, monospace; 
+    min-width: 5em;
+    margin: 1em;
+    padding: 1em;
+    overflow: auto;
 }
 
 h1 {
@@ -25,6 +28,10 @@ section {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    overflow: auto;
+    align-content: center;
+    align-items: center;
 }
 
 .archivo {
