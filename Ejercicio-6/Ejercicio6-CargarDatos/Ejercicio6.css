@@ -50,8 +50,9 @@ input[type="submit"]:hover {
 .colorVerde {
     font-family: "Andale Mono", AndaleMono, monospace;
     color: green;
-    background-color: lightgray;
+    background-color: white;
     font-weight: bold;
+	border: 0.5em solid black;
 }
 
 .error {
