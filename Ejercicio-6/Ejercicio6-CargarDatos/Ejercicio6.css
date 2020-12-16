@@ -52,7 +52,8 @@ input[type="submit"]:hover {
     color: green;
     background-color: white;
     font-weight: bold;
-	border: 0.5em solid black;
+	border: 0.15em solid black;
+	padding: 0.25em;
 }
 
 .error {
