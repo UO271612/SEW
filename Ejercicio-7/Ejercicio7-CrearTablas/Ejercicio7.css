@@ -49,16 +49,20 @@ input[type="submit"]:hover {
 
 .colorVerde {
     font-family: "Andale Mono", AndaleMono, monospace;
-    color: green;
-    background-color: seashell;
+    color: black;
+    background-color: white;
     font-weight: bold;
+	border: 0.15em solid black;
+	padding: 0.25em;
 }
 
 .error {
     font-family: "Andale Mono", AndaleMono, monospace;
-    color: red;
-    background-color: seashell;
+    color: black;
+    background-color: white;
     font-weight: bold;
+	border: 0.15em solid black;
+	padding: 0.25em;
 }
 
 p {
