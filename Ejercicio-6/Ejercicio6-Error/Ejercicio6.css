@@ -58,9 +58,11 @@ input[type="submit"]:hover {
 
 .error {
     font-family: "Andale Mono", AndaleMono, monospace;
-    color: red;
-    background-color: lightgray;
+    color: black;
+    background-color: white;
     font-weight: bold;
+	border: 0.15em solid black;
+	padding: 0.25em;
 }
 
 p {
